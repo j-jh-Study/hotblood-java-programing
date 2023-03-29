@@ -1,6 +1,10 @@
-# 제네릭
+## 세부 목차
+1. [제네릭의 이해](#21-1-제네릭의-이해)
+2. [제네릭의 기본 문법](#21-2-제네릭의-기본-문법)
+
 
 ## 21-1 제네릭의 이해
+
 
 ### 제네릭 이전 코드
 https://github.com/j-jh-Study/hotblood-java-programing/blob/d88ec0a8e752c54f51b210ac4c9bd138556b7610/javaCode/src/main/java/FruitAndBox2.java#L9-L10
