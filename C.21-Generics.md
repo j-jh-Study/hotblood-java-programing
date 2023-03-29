@@ -122,10 +122,35 @@ T는 인스턴스 생성 순간에 결정 !
   
   일부 메소드에 대해서만 제네릭으로 정의하는 것도 가능
   
-  ```jvaa
+  ```java
    public static <T> Box<T> makeBox(T o){...}
   ...
  
   제네릭 클래스는 인스턴스 생성 시 자료 형이 결정.. 반면 
   제네릭 메소드는 '메소드 호출시에 자료형이 결정'
+  
+  
+  ```java
+  Box<String> sBox = BoxFactory.<String>makeBox("Sweet");
+  Box<Double> dBox = BoxFactory.<Double>makeBox(7.59);
+  
+  // 여기서 두번째 타입인자는 생략가능하다 
+   Box<String> sBox = BoxFactory.makeBox("Sweet");
+  Box<Double> dBox = BoxFactory.makeBox(7.59);
+  ```
+  
+  반환형과 전달인자 자료형 구분하기 
+  
+  ```java
+    public static <T> Box<T> makeBox(T o){..}
+    // 반환형이 Box<T> 형태이고 전달인자의 자료형이 T
+  
+    public static <T> T openBox(Box<T> box){...}
+   // 반환형이 T이고 전달인자의 자료형이 Box<T>
+  
+  ```
+  
+  ### 제네릭 메소드의 제한된 타입 매개변수 선언
+  
+  제네릭 클래스와 유사하게 제네릭 메소드는 호출 시 전달되는 타입 인자를 제한 가능함.
   
