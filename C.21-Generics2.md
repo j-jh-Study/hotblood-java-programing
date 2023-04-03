@@ -39,4 +39,11 @@ Number를 Integer가 상속하지만 Box<Number> 와 Box<Integer>는 상속 관�
   
   ### 와일드카드(Wildcard)
   
+  코드의 간결성이 증가한다..
+  
+ ```
+  T대신 object를 쓰면 안되는이유 
+  Box<Object>와 Box<String>은 상속 관계를 형성하지 않는다..! 이걸 기억해야함..!
+  ```
+  
   
