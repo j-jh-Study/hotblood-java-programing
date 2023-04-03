@@ -25,5 +25,18 @@ Number를 Integer가 상속하지만 Box<Number> 와 Box<Integer>는 상속 관�
   
   
  ### 타겟타입(Target Types)
+컴파일러의 추론능력이 자바 7부터 향상 되었다 .!
+  
+  ```
+  Box<Integer> iBox = EmptyBoxFactory.<Integer>makeBox();
+  
+  Box<Integer> iBox = EmptyBoxFactory.makeBox();
+  ```
+  T 를 추론할때 사영 된정보 Box<Integer> 같은 애들을 타켓 타입이라고함!
+ 
+ >여기서 의의는 대입 연산자의 왼편에 있는 정보를 가지고 컴파일러가 이러한 유추를 진행했다는점..
+  
+  
+  ### 와일드카드(Wildcard)
   
   
